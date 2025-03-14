@@ -1,0 +1,17 @@
+sorting:	main sort
+	g++ -std=c++14 -Wall main.o sort.o -o sort
+
+main:	main.cpp sort.h
+	g++ -c -std=c++14 -Wall main.cpp
+
+sort:	sort.cpp sort.h
+	g++ -c -std=c++14 -Wall sort.cpp
+
+utest:	test.cpp sort.h
+	g++ -c -std=c++14 -Wall test.cpp
+
+test:	utest sort
+	g++ -std=c++14 -Wall test.o sort.o -o test
+
+clean:
+	rm sort *.o

@@ -1,0 +1,21 @@
+CFLAGS = -g -std=c++14 -Wall
+CC = g++
+
+
+sorting:	main sort
+	$(CC) $(CLAGS) main.o sort.o -o sort
+
+main:	main.cpp sort.h
+	$(CC) $(CFLAGS) -c main.cpp
+
+sort:	sort.cpp sort.h
+	$(CC) $(CFLAGS) -c sort.cpp
+
+utest:	test.cpp sort.h
+	$(CC) $(CFLAGS) -c test.cpp
+
+test:	utest sort
+	$(CC) $(CFLAGS) test.o sort.o -o test
+
+clean:
+	rm sort *,o
