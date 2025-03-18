@@ -13,11 +13,11 @@ void Swap(int& a, int& b){
 	a = b;
 	b = c;
 }
-void sort(int array[], unsigned int size){
+void Sort(int array[], unsigned int size){
 	if (size == 1)
 		return;
 	Swap(array[0], array[FindMinPosition(array, size)]);
-	sort(array + 1, size - 1);
+	Sort(array + 1, size - 1);
 }
 
 

@@ -1,4 +1,4 @@
-CFLAGS = -g -std=c++14 -Wall
+CFLAGS = -g -std=c++20 -Wall
 CC = g++
 
 

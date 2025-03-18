@@ -1,7 +1,7 @@
 #ifndef SORT_H
 #define SORT_H
 
-void sort(int array[], unsigned int size);
+void Sort(int array[], unsigned int size);
 
 #endif
 

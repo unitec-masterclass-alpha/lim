@@ -1,0 +1,3 @@
+/Users/arias/development/unitec/master-class-alpha/lim/cmake-build-debug/CMakeFiles/lim.dir
+/Users/arias/development/unitec/master-class-alpha/lim/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/arias/development/unitec/master-class-alpha/lim/cmake-build-debug/CMakeFiles/rebuild_cache.dir
