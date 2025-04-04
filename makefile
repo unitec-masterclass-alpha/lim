@@ -3,7 +3,7 @@ CC = g++
 
 
 sorting:	main sort
-	$(CC) $(CLAGS) main.o sort.o -o sort
+	$(CC) $(CFLAGS) main.o sort.o -o sort
 
 main:	main.cpp sort.h
 	$(CC) $(CFLAGS) -c main.cpp
